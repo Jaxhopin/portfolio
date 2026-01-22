@@ -718,16 +718,64 @@ body {
     stroke: #B047FF;
 }
 
-@media (max-width: 600px) {
-    .contact-card-direct {
-        flex-direction: column;
-        padding: 30px;
-        text-align: center;
+@media (max-width: 900px) {
+
+    .bar {
+        position: fixed;
+        height: auto;
+        padding: 10px 0;
+        gap: 15px;
+        flex-wrap: wrap;
     }
-    .text-box {
+
+    .bar a {
+        font-size: 14px;
+    }
+
+    .title {
+        margin-top: 150px;
+        font-size: 40px;
+        padding: 0 20px;
+    }
+
+    .aboutme-text, .section-title {
+        font-size: 35px;
+    }
+
+    
+    .aboutme-desc {
+        width: 90%; 
+        font-size: 16px;
+    }
+
+    .careabout, .whatIuse, .contact-wrapper 
+        gap: 40px;
         align-items: center;
     }
+
+    .careabout-item, .whatIuse-item, .form-container {
+        width: 90%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .standard-section {
+        padding: 60px 15px;
+    }
+    
+    .contact-card-direct {
+        flex-direction: column;
+        text-align: center;
+        width: 90%;
+    }
+    
     .arrow-box {
         display: none;
     }
+
+    .itch svg, .email svg {
+        width: 40px;
+        height: 40px;
+    }
 }
+
